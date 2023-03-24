@@ -18,6 +18,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.khatch.lektion_12_compose.ui.theme.Lektion_12_ComposeTheme
+import java.security.AllPermission
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,8 +60,8 @@ fun GreetingPreview() {
         Greeting(name = "Hejsan Världen")
         */
 
-        Row(verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.Center) {
+        Row(verticalAlignment = Alignment.CenterVertically
+            ) {
             Image(
                 painterResource(R.drawable.ic_launcher_background),
                 "",
@@ -69,7 +70,7 @@ fun GreetingPreview() {
                     .size(75.dp)
                     .clip(CircleShape)
             )
-            Column {
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Greeting("Hello")
                 Greeting("Short Description")
             }
