@@ -3,14 +3,15 @@ package com.khatch.lektion_12_compose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import com.khatch.lektion_12_compose.ui.theme.Lektion_12_ComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -41,8 +42,11 @@ fun Greeting(name: String) {
 fun GreetingPreview() {
     Lektion_12_ComposeTheme {
         Greeting(name = "Hello world")
-        Greeting("Bananas")
-        Greeting(name = "Tomato")
+        Image(
+            painterResource(R.drawable.ic_launcher_background),
+            ""
+        )
+        Greeting(name = "Jesus")
     }
 }
 
