@@ -60,8 +60,9 @@ fun GreetingPreview() {
         Greeting(name = "Hejsan Världen")
         */
         Column {
-            Greeting(name = "Android")
-            Greeting("Bananas")
+            Greeting(name = "Hello World")
+            Greeting("Testing")
+            Greeting("Another Test")
         }
         //Greeting(name = "Jesus")
     }
