@@ -59,7 +59,7 @@ fun GreetingPreview() {
         Greeting(name = "Hejsan Världen")
         */
 
-        Row(verticalAlignment = Alignment.Bottom) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
             Image(
                 painterResource(R.drawable.ic_launcher_background),
                 "",
