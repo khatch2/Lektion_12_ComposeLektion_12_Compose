@@ -59,6 +59,10 @@ fun GreetingPreview() {
         )
         Greeting(name = "Hejsan Världen")
         */
+        Image(
+            painterResource(R.drawable.ic_launcher_background),
+            ""
+        )
         Column {
             Greeting(name = "Hello World")
             Greeting("Testing")
