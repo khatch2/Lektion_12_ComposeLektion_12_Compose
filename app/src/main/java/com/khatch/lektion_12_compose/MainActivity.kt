@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
 import com.khatch.lektion_12_compose.ui.theme.Lektion_12_ComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,17 +24,23 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     // TODO - UI
-                    Greeting()
+                    Greeting("Hej world")
                 }
             }
         }
     }
 }
 
+@Composable
+fun Greeting(name: String) {
+    Text(name)
+}
+
 @Preview(showBackground = true)
 @Composable
-fun Greeting(/* TODO - PARAM */) {
-    Text("Hejsan Världen")
-
+fun GreetingPreview() {
+    Lektion_12_ComposeTheme {
+        Greeting(name = "Hello world")
+    }
 }
 
