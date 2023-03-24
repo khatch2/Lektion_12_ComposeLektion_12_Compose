@@ -8,6 +8,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -77,6 +78,10 @@ fun GreetingPreview() {
                 Greeting("Hello")
                 Greeting("Short Description")
             }
+            OutlinedTextField(
+                value = "",
+                onValueChange = {},
+                label = { Text(text = "Name: ")})
         }
         //Greeting(name = "Jesus")
     }
