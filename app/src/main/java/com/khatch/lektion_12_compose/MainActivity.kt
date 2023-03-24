@@ -23,9 +23,17 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     // TODO - UI
+                    Greeting()
                 }
             }
         }
     }
+}
+
+@Preview
+@Composable
+fun Greeting(/* TODO - PARAM */) {
+    Text("Hejsan Världen")
+
 }
 
