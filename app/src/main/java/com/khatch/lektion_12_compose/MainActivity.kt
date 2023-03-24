@@ -4,10 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -60,14 +57,13 @@ fun GreetingPreview() {
         )
         Greeting(name = "Hejsan Världen")
         */
-        Image(
-            painterResource(R.drawable.ic_launcher_background),
-            ""
-        )
-        Row {
-            Greeting(name = "Hello World")
-            Greeting("Testing")
-            Greeting("Another Test")
+
+        Box() {
+            Image(
+                painterResource(R.drawable.ic_launcher_background),
+                "Template"
+            )
+            Greeting(name = "Android")
         }
         //Greeting(name = "Jesus")
     }
