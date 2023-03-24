@@ -41,6 +41,8 @@ fun Greeting(name: String) {
 fun GreetingPreview() {
     Lektion_12_ComposeTheme {
         Greeting(name = "Hello world")
+        Greeting("Bananas")
+        Greeting(name = "Tomato")
     }
 }
 
