@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -63,7 +64,7 @@ fun GreetingPreview() {
             painterResource(R.drawable.ic_launcher_background),
             ""
         )
-        Column {
+        Row {
             Greeting(name = "Hello World")
             Greeting("Testing")
             Greeting("Another Test")
