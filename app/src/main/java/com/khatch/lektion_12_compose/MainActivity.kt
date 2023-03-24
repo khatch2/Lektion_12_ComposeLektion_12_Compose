@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -46,14 +47,22 @@ fun Greeting(name: String) {
 @Composable
 fun GreetingPreview() {
     Lektion_12_ComposeTheme {
+        /*
         Greeting(name = "Hello world")
         Image(
             painterResource(R.drawable.ic_launcher_background),
             "Desc",
             contentScale = ContentScale.Crop,
-            modifier = Modifier.size(20.dp).clip(CircleShape)
+            modifier = Modifier
+                .size(20.dp)
+                .clip(CircleShape)
         )
-        Greeting(name = "Hello World")
+        Greeting(name = "Hejsan Världen")
+        */
+        Column {
+            Greeting(name = "Android")
+            Greeting("Bananas")
+        }
         //Greeting(name = "Jesus")
     }
 }
