@@ -46,7 +46,8 @@ fun GreetingPreview() {
             painterResource(R.drawable.ic_launcher_background),
             ""
         )
-        Greeting(name = "Jesus")
+        Greeting(name = "Hello World")
+        //Greeting(name = "Jesus")
     }
 }
 
