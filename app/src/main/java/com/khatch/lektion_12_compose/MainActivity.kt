@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun Greeting(/* TODO - PARAM */) {
     Text("Hejsan Världen")
