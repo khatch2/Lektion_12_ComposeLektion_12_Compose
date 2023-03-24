@@ -10,6 +10,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
@@ -58,15 +59,18 @@ fun GreetingPreview() {
         Greeting(name = "Hejsan Världen")
         */
 
-        Row {
+        Row(verticalAlignment = Alignment.Bottom) {
             Image(
                 painterResource(R.drawable.ic_launcher_background),
                 "",
-                Modifier.clip(CircleShape)
+                Modifier
+                    .padding(5.dp)
+                    .size(75.dp)
+                    .clip(CircleShape)
             )
             Column {
                 Greeting("Hello")
-                Greeting("World")
+                Greeting("Short Description")
             }
         }
         //Greeting(name = "Jesus")
