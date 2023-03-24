@@ -58,12 +58,16 @@ fun GreetingPreview() {
         Greeting(name = "Hejsan Världen")
         */
 
-        Box() {
+        Row {
             Image(
                 painterResource(R.drawable.ic_launcher_background),
-                "Template"
+                "",
+                Modifier.clip(CircleShape)
             )
-            Greeting(name = "Android")
+            Column {
+                Greeting("Hello")
+                Greeting("World")
+            }
         }
         //Greeting(name = "Jesus")
     }
