@@ -100,7 +100,7 @@ fun usernameInput() {
         )
         OutlinedTextField(
             value = username,
-            onValueChange = {},
+            onValueChange = { username = it },
             label = { Text("Name")})
     }
     
