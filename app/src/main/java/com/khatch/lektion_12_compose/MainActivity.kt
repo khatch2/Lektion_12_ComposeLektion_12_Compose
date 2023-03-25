@@ -94,7 +94,7 @@ fun usernameInput() {
         mutableStateOf("")
     }
     Column {
-        Text(text = "Hello, $username!",
+        Text(text = username,
             modifier = Modifier.padding(bottom = 8.dp),
             style = MaterialTheme.typography.body1 /* HERE must be .bodyMedium*/
         )
