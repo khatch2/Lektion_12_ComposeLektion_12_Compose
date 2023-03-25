@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     // TODO - UI
-                    Greeting("Hej world")
+                    usernameInput()
                 }
             }
         }
