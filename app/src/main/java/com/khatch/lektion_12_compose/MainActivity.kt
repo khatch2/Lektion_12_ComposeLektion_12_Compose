@@ -87,7 +87,7 @@ fun GreetingPreview() {
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun UsernameInput() {
     var username by remember {
