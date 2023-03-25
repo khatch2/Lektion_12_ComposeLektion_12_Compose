@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     // TODO - UI
-                    usernameInput()
+                    UsernameInput()
                 }
             }
         }
@@ -89,7 +89,7 @@ fun GreetingPreview() {
 
 @Preview
 @Composable
-fun usernameInput() {
+fun UsernameInput() {
     var username by remember {
         mutableStateOf("")
     }
