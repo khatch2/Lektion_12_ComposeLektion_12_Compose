@@ -46,7 +46,7 @@ fun Greeting(name: String) {
     Text(name)
 }
 
-@Preview(showBackground = true)
+// @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     Lektion_12_ComposeTheme {
@@ -87,3 +87,18 @@ fun GreetingPreview() {
     }
 }
 
+@Preview
+@Composable
+fun usernameInput() {
+    Column {
+        Text(text = "Hello!",
+            modifier = Modifier.padding(bottom = 8.dp),
+            style = MaterialTheme.typography.body1 /* HERE must be .bodyMedium*/
+        )
+        OutlinedTextField(
+            value = "",
+            onValueChange = {},
+            label = { Text("Name")})
+    }
+    
+}
