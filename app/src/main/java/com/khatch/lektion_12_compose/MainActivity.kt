@@ -11,7 +11,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -90,13 +90,16 @@ fun GreetingPreview() {
 @Preview
 @Composable
 fun usernameInput() {
+    var username by remember {
+        mutableStateOf("")
+    }
     Column {
         Text(text = "Hello!",
             modifier = Modifier.padding(bottom = 8.dp),
             style = MaterialTheme.typography.body1 /* HERE must be .bodyMedium*/
         )
         OutlinedTextField(
-            value = "",
+            value = username,
             onValueChange = {},
             label = { Text("Name")})
     }
